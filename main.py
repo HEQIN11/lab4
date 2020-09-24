@@ -19,12 +19,14 @@ def num_of_divisors(n):
   return a
 
 def num_of_primes(n):
-
+  s=0
   for i in range(n,0,-1):
     if num_of_divisors(i)==2:
-      return i
-      
-  
+      s=s+1
+    
+
+
+  return s
 
 def sum_n(n):
 
